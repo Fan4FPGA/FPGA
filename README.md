@@ -1,1 +1,1 @@
-# FPGA
+# DDR3 MIG
