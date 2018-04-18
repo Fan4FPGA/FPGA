@@ -1,0 +1,177 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    21:05:57 01/11/2018 
+// Design Name: 
+// Module Name:    U_MCB_RD 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module U_MCB_RD(
+	input clk,
+	input rst_n,
+	input u_rd_cmd_done,
+	input u_rd_rdy,
+	input[127:0] u_rd_data,	
+	
+	output reg u_rd_cmd_en,
+	output reg u_rd_en,
+	output reg [29:0] u_rd_addr,
+	output reg [6:0] u_rd_len
+    );
+    
+   reg [1:0] u_rd_s;
+   reg [6:0] u_rd_cnt;
+   reg read_error;
+   
+   (* KEEP = "TRUE" *) wire [1:0] u_rd_s_r;
+   (* KEEP = "TRUE" *) wire read_error_dg;
+   
+   assign u_rd_s_r = u_rd_s;
+   assign read_error_dg = read_error;
+   
+   parameter RD_IDLE  = 2'd0;
+	 parameter RD_BEGIN = 2'd1;
+	 parameter RD_WAIT  = 2'd2;
+	 parameter RD_RST   = 2'd3;
+	 
+	 
+	 reg u_rd_en_dly;
+	 
+	 always@(posedge clk)
+	 begin
+	 	if(!rst_n)
+	 		u_rd_en_dly <= 1'b0;
+	 	else
+	 		u_rd_en_dly <= u_rd_en;
+	end
+	
+	//命令请求
+	always@(posedge clk)
+	begin
+		if(!rst_n)
+			u_rd_cmd_en <= 1'b0;
+		else begin
+			if(u_rd_cmd_done)	u_rd_cmd_en <= 1'b0;
+			else if(u_rd_en&&(~u_rd_en_dly)) u_rd_cmd_en <= 1'b1;
+		end	
+	end
+	
+	reg s;
+	
+	//读数据比较
+	always@(posedge clk)
+	begin
+		if(!rst_n)
+		begin
+			s <= 1'b0;
+			read_error <= 1'b0;
+		end
+		else begin
+			if((u_rd_s == RD_WAIT)&&u_rd_rdy)
+				case(s)
+					1'b0:
+					if(u_rd_data==128'hAA_AA_AA_AA_AA_AA_AA_AA_AA_AA_AA_AA_AA_AA_AA_AA) s <= 1'b1;
+					else read_error<=1'b1;
+					
+					1'b1:
+					if(u_rd_data==128'h55_55_55_55_55_55_55_55_55_55_55_55_55_55_55_55) s <= 1'b0;
+					else read_error<=1'b1;
+				endcase
+			else if(~u_rd_en)begin
+				read_error <= 1'b0;
+				s <= 1'b0;
+			end
+			
+		end
+
+	end
+	
+	
+	//读数据计数器
+	always @(posedge clk)
+	begin
+		if(~rst_n)
+		u_rd_cnt<=0;
+		else begin
+			if(u_rd_rdy)// valid data 
+				u_rd_cnt<=u_rd_cnt+1'b1; // count up
+			else if(u_rd_s==RD_IDLE)u_rd_cnt<=7'd0; // clear counter
+		end
+	end
+
+	reg [28:0] u_rd_addr_set;
+	always @(posedge clk)
+	begin
+		if(!rst_n)
+			begin
+				u_rd_addr <= 29'b0;
+				u_rd_len <= 7'd64;
+				u_rd_en <= 1'b0;
+				u_rd_s <= RD_IDLE;
+			end
+		else begin
+			case(u_rd_s)
+				RD_IDLE:
+				begin
+					u_rd_en <= 1'b0;
+					if(u_rd_cmd_en == 1'b0) u_rd_s <= RD_BEGIN;
+					else u_rd_s <= u_rd_s;
+				end
+				
+				RD_BEGIN:
+				begin
+					u_rd_len <= 7'd64;
+					u_rd_addr <= 29'd0;
+					u_rd_en <= 1'b1;
+					u_rd_s <= RD_WAIT;
+				end
+				
+				RD_WAIT:
+				begin
+					if(u_rd_cnt == (u_rd_len))begin
+						u_rd_s <= RD_IDLE;
+						u_rd_en <= 1'b0;
+					end
+					else
+						u_rd_s <= u_rd_s;
+				end
+				
+				default : u_rd_s <= RD_IDLE;
+				
+			endcase
+
+		end
+
+	end
+	
+	
+
+//地址空间起始地址产生
+	parameter ADDR_INC = 12'h400;
+	parameter END_ADDR = 29'h10000000 - ADDR_INC;
+	
+	always @(posedge clk)
+	if(~rst_n)
+	begin
+			u_rd_addr_set<=29'b0;
+	end
+	else begin
+			if(u_rd_cmd_done&&(u_rd_addr_set<END_ADDR))	
+				u_rd_addr_set<=u_rd_addr_set+ADDR_INC;
+			else if(u_rd_addr_set==END_ADDR)
+				u_rd_addr_set<=0;
+	end
+
+endmodule

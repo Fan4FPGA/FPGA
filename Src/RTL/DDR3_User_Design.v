@@ -1,0 +1,186 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    21:04:39 01/11/2018 
+// Design Name: 
+// Module Name:    DDR3_User_Design 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module DDR3_User_Design #(parameter MCB_DATA_WIDTH = 8'd128)
+	(
+		//Clk and Reset
+		input clk,
+		input rst_n,
+		//MCB cmd interface
+      output	reg					c3_p0_cmd_clk,
+      output						c3_p0_cmd_en,
+      output  reg [2:0]			c3_p0_cmd_instr,
+      output  reg [5:0]			c3_p0_cmd_bl,
+      output  reg [29:0]			c3_p0_cmd_byte_addr,
+      input							c3_p0_cmd_empty,											//not use
+      input							c3_p0_cmd_full,												//not use
+   //MCB wirte interface   
+      output	reg													c3_p0_wr_clk,
+      output														c3_p0_wr_en,
+      output  reg [MCB_DATA_WIDTH/8 - 1:0]		c3_p0_wr_mask,				//not use
+      output      [MCB_DATA_WIDTH - 1:0]			c3_p0_wr_data,
+      input															c3_p0_wr_full,	
+      input															c3_p0_wr_empty,				//not use
+      input [6:0]												c3_p0_wr_count,				//not use
+      input															c3_p0_wr_underrun,		//not use
+      input															c3_p0_wr_error,				//not use
+   //MCB read interface   
+      output	reg													c3_p0_rd_clk,
+      output														c3_p0_rd_en,
+      input [MCB_DATA_WIDTH - 1:0]			c3_p0_rd_data,
+      input															c3_p0_rd_full,				//not use
+      input															c3_p0_rd_empty,
+      input [6:0]												c3_p0_rd_count,				//not use
+      input															c3_p0_rd_overflow,		//not use
+      input															c3_p0_rd_error,				//not use
+      
+   //User interface   
+   //User write interface
+   
+	   input [6:0] 										u_wr_len,
+	   input [29:0] 									u_wr_addr,
+	   input [MCB_DATA_WIDTH - 1:0]	 	u_wr_data,
+	   input 													u_wr_en,
+	   input 													u_wr_cmd_en,
+	   output 												u_wr_cmd_done,
+	   output 												u_wr_rdy,
+	   
+	   //User read interface
+	   
+	   input [6:0] 										u_rd_len,
+	   input [29:0] 									u_rd_addr,
+	   output [MCB_DATA_WIDTH - 1:0] 	u_rd_data,
+	   input 													u_rd_en,
+	   input 													u_rd_cmd_en,
+	   output 												u_rd_cmd_done,
+	   output 												u_rd_rdy
+    
+    );
+    
+    localparam MCB_CMD_WR = 3'b000;					//mcb write cmd
+    localparam MCB_CMD_RD = 3'b001;					//mcb read cmd
+    localparam MCB_CMD_WP	= 3'b010;					//mcb write and auto precharge cmd	
+    localparam MCB_CMD_RP = 3'b011;					//mcb read and auto percharge cmd
+  	localparam MCD_CMD_RF = 3'b100;					//mcb refresh cmd
+  	
+  	(* KEEP = "TRUE" *) wire c3_p0_rd_empty_dg;
+  	(* KEEP = "TRUE" *) wire [127:0]c3_p0_wr_data_dg;
+  	(* KEEP = "TRUE" *) wire [127:0]c3_p0_rd_data_dg;
+  	
+  	assign c3_p0_rd_empty_dg = c3_p0_rd_empty;
+  	assign c3_p0_wr_data_dg = c3_p0_wr_data;
+  	assign c3_p0_rd_data_dg = c3_p0_rd_data;
+  	
+  	//数据通道连接
+  	assign c3_p0_wr_data = u_wr_data;
+  	assign u_rd_data = c3_p0_rd_data;
+  	
+  	wire [5:0] mcb_rd_bl;
+  	wire [5:0] mcb_wr_bl;
+  	
+  	reg mcb_cmd_wr_p;
+    reg mcb_cmd_wr_p1;
+    
+    reg mcb_cmd_rd_p;
+    reg mcb_cmd_rd_p1;
+    
+    reg [1:0] u_wr_cmd_done1;
+    reg [1:0] u_rd_cmd_done1;
+    
+    wire u_wr_cmd_done0;
+		wire u_rd_cmd_done0;
+		
+		assign u_wr_cmd_done = u_wr_cmd_done1[1];
+		assign u_rd_cmd_done = u_rd_cmd_done1[1];
+		
+		
+		always@(posedge clk)
+		begin
+			if(!rst_n)
+			begin
+				mcb_cmd_rd_p1  <= 1'b0;
+				mcb_cmd_wr_p1  <= 1'b0;
+				u_wr_cmd_done1 <= 2'b0;
+				u_rd_cmd_done1 <= 2'b0;
+			end
+			else begin
+				mcb_cmd_rd_p1  <= mcb_cmd_rd_p;
+				mcb_cmd_wr_p1  <= mcb_cmd_wr_p;
+				u_wr_cmd_done1 <= {u_wr_cmd_done1[0:0],u_wr_cmd_done0};
+				u_rd_cmd_done1 <= {u_rd_cmd_done1[0:0],u_rd_cmd_done0};
+			end
+		end
+		
+		
+		assign c3_p0_cmd_en =((~mcb_cmd_wr_p1)&mcb_cmd_wr_p) ||( (~mcb_cmd_rd_p1)&mcb_cmd_rd_p);	//mcb cmd enable
+		assign u_wr_cmd_done0 = c3_p0_cmd_en&(c3_p0_cmd_instr == MCB_CMD_WP);//user interface write cmd is done
+		assign u_rd_cmd_done0 = c3_p0_cmd_en&(c3_p0_cmd_instr == MCB_CMD_RP);//user interface read cmd is done
+		assign mcb_rd_bl	= (u_rd_len -1'b1);
+		assign mcb_wr_bl 	= (u_wr_len -1'b1);
+
+		always @(posedge clk)
+		begin
+			if(!rst_n)
+			begin
+				c3_p0_cmd_instr 		<= MCB_CMD_RD;
+				c3_p0_cmd_byte_addr <= u_rd_addr;
+				c3_p0_cmd_bl 				<= mcb_rd_bl;
+				mcb_cmd_wr_p 				<= 1'b0;
+				mcb_cmd_rd_p 				<= 1'b0;
+			end
+			else begin
+				if(u_wr_cmd_en)
+				begin
+					c3_p0_cmd_instr			<= MCB_CMD_WP;
+					c3_p0_cmd_byte_addr <= u_wr_addr;
+					c3_p0_cmd_bl 				<= mcb_wr_bl;
+					mcb_cmd_wr_p 				<= 1'b1;
+					mcb_cmd_rd_p 				<= 1'b0;
+				end
+				else if(u_rd_cmd_en)
+				begin
+				c3_p0_cmd_instr 		<= MCB_CMD_RD;
+				c3_p0_cmd_byte_addr <= u_rd_addr;
+				c3_p0_cmd_bl 				<= mcb_rd_bl;
+				mcb_cmd_wr_p 				<= 1'b0;
+				mcb_cmd_rd_p 				<= 1'b1;					
+				end
+				else begin
+				mcb_cmd_wr_p <= 1'b0;
+				mcb_cmd_rd_p <= 1'b0;					
+				end
+	
+			end
+
+		end
+		
+//write fifo and read fifo enale
+	assign c3_p0_wr_en = (~c3_p0_wr_full)&&u_wr_en&&rst_n;
+	assign c3_p0_rd_en =(~c3_p0_rd_empty)&&u_rd_en&&rst_n;
+	
+	assign u_wr_rdy = c3_p0_wr_en;
+	assign u_rd_rdy = c3_p0_rd_en;
+		
+		
+		
+		
+
+
+endmodule
