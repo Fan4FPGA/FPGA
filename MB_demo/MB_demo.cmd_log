@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "F:/FPGA_Study/MB_demo/MB_demo/MB_demo.xst" -ofn "F:/FPGA_Study/MB_demo/MB_demo/MB_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mis603_soc/data/mis603_soc.ucf -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 MB_demo.ngc MB_demo.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 MB_demo.ngc MB_demo.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 MB_demo.ngc MB_demo.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 MB_demo.ngc MB_demo.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mis603_soc/data/mis603_soc.ucf -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 MB_demo.ngc MB_demo.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MB_demo_map.ncd MB_demo.ngd MB_demo.pcf 
+par -w -intstyle ise -ol high -mt off MB_demo_map.ncd MB_demo.ncd MB_demo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MB_demo.twx MB_demo.ncd -o MB_demo.twr MB_demo.pcf 
+bitgen -intstyle ise -f MB_demo.ut MB_demo.ncd 

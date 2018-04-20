@@ -1,0 +1,89 @@
+13:45:23.225 INFO  - Processing command line option -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+13:54:00.151 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:29:45.677 INFO  - Project mis603_soc_hw_platform's source hardware specification located at F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:29:51.982 INFO  - Copied contents of F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml into \mis603_soc_hw_platform\system.xml. 
+16:29:52.131 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:30:00.326 INFO  - Updating hardware inferred compiler options for Hello_World. 
+16:30:01.133 INFO  - Updating hardware inferred compiler options for Water_LED. 
+16:30:01.143 INFO  - Clearing existing target manager status. 
+16:30:03.013 INFO  - Closing and re-opening the MSS file of ther project Hello_World_bsp 
+16:30:12.101 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:39:39.541 INFO  - Processing command line option -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+16:57:41.117 INFO  - Processing command line option -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+16:57:41.242 INFO  - The hardware specification for project 'mis603_soc_hw_platform' is different from F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+16:57:41.391 INFO  - Copied contents of F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml into \mis603_soc_hw_platform\system.xml. 
+16:57:41.492 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:57:49.010 INFO  - Updating hardware inferred compiler options for Water_LED. 
+16:57:49.036 INFO  - Clearing existing target manager status. 
+16:57:50.230 INFO  - Closing and re-opening the MSS file of ther project Water_LED_bsp 
+16:57:51.516 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:15:39.072 INFO  - Project mis603_soc_hw_platform's source hardware specification located at F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+17:15:45.321 INFO  - Copied contents of F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml into \mis603_soc_hw_platform\system.xml. 
+17:15:45.421 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:15:45.472 INFO  - Clearing existing target manager status. 
+17:15:46.472 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:15:56.767 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:15:59.909 INFO  - Processing command line option -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+17:28:09.868 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+17:28:48.788 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+17:30:43.072 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:31:04.513 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:35:14.975 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+17:35:14.975 ERROR - Timeout occured while waiting to get reply for command "xstop 0" 
+17:37:23.084 ERROR - Unexpected error while terminating XMD: {} org.eclipse.debug.core.DebugException: Terminate failed
+	at org.eclipse.debug.core.model.RuntimeProcess.terminate(RuntimeProcess.java:224)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.terminate(Unknown Source)
+
+17:39:37.369 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:39:39.659 INFO  - System reset is completed. 
+17:41:29.435 INFO  - System reset is completed. 
+17:44:13.785 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+17:44:13.794 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:01:19.107 INFO  - Processing command line option -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+18:01:19.866 INFO  - The hardware specification for project 'mis603_soc_hw_platform' is different from F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+18:01:20.004 INFO  - Copied contents of F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml into \mis603_soc_hw_platform\system.xml. 
+18:01:20.150 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:01:28.138 INFO  - Updating hardware inferred compiler options for Water_LED. 
+18:01:28.165 INFO  - Clearing existing target manager status. 
+18:05:39.104 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:16:41.732 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:16:41.735 WARN  - Terminating existing sessions on processor microblaze_0 
+18:19:48.630 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:19:52.591 INFO  - Processing command line option -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+18:26:09.335 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:26:44.890 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:32:04.154 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+18:32:04.154 ERROR - Timeout occured while waiting to get reply for command "close_terminal" 
+18:32:04.154 ERROR - Error while closing JTAG UART server:  
+18:33:46.257 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:47:12.670 INFO  - Processing command line option -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml. 
+18:48:48.870 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+18:48:48.895 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

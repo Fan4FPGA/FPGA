@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Apr 20 18:36:01 2018
+# Process ID: 66684
+# Log file: F:/FPGA_Study/MB_demo/MB_demo/planAhead_run_1/planAhead.log
+# Journal file: F:/FPGA_Study/MB_demo/MB_demo/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source F:/FPGA_Study/MB_demo/MB_demo/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

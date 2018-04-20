@@ -1,0 +1,3660 @@
+=====================
+Opened log file
+=====================
+Created pcores directory
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Copied D:/Xilinx/14.7/ISE_DS/EDK/data/xflow/bitgen_spartan6.ut to etc directory
+Copied file D:/Xilinx/14.7/ISE_DS/EDK/data/xflow/fast_runtime_spartan6.opt to
+etc directory
+
+Overriding IP level properties ...
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Checking platform address map ...
+Created backup of etc/bitgen.ut to etc/bitgen.ut.virtex5
+Copied D:/Xilinx/14.7/ISE_DS/EDK/data/xflow/bitgen_spartan6.ut to etc directory
+Created backup of etc/fast_runtime.opt to etc/fast_runtime.opt.virtex5
+Copied file D:/Xilinx/14.7/ISE_DS/EDK/data/xflow/fast_runtime_spartan6.opt to
+etc directory
+No changes to be saved in MHS file
+Saved project XMP file
+Saved Make file
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Overriding Xilinx file <TextEditor.cfg> with local file <D:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+The project's MHS file has changed on disk.
+
+********************************************************************************
+At Local date and time: Fri Apr 20 13:28:15 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x00400000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x00400000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi4lite_0; no DECERR
+checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+WARNING:EDK:504 - (GLOBAL) - atleast 1 toplevel output/input needs to be
+   defined!
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 65 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 108 - elaborating
+IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+WARNING:EDK:504 - (GLOBAL) - atleast 1 toplevel output/input needs to be
+   defined!
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:proc_sys_reset_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 20 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 33 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:microblaze_0_i_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 40 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 49 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:microblaze_0_d_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 56 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 65 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:microblaze_0 - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs
+line 72 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:debug_module - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs
+line 95 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 108 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:axi4lite_0 - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs
+line 121 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Running NGCBUILD ...
+IPNAME:mis603_soc_microblaze_0_ilmb_wrapper INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 33 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd ..
+mis603_soc_microblaze_0_ilmb_wrapper.ngc ../mis603_soc_microblaze_0_ilmb_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/microblaze_0_ilmb_wrapp
+er/mis603_soc_microblaze_0_ilmb_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_microblaze_0_ilmb_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_microblaze_0_ilmb_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:mis603_soc_microblaze_0_dlmb_wrapper INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 49 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd ..
+mis603_soc_microblaze_0_dlmb_wrapper.ngc ../mis603_soc_microblaze_0_dlmb_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/microblaze_0_dlmb_wrapp
+er/mis603_soc_microblaze_0_dlmb_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_microblaze_0_dlmb_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_microblaze_0_dlmb_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:mis603_soc_microblaze_0_wrapper INSTANCE:microblaze_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 72 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd .. mis603_soc_microblaze_0_wrapper.ngc
+../mis603_soc_microblaze_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/microblaze_0_wrapper/mi
+s603_soc_microblaze_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_microblaze_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_microblaze_0_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:mis603_soc_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 108 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd ..
+mis603_soc_clock_generator_0_wrapper.ngc ../mis603_soc_clock_generator_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/clock_generator_0_wrapp
+er/mis603_soc_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:mis603_soc_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 121 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd .. mis603_soc_axi4lite_0_wrapper.ngc
+../mis603_soc_axi4lite_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/axi4lite_0_wrapper/mis6
+03_soc_axi4lite_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_axi4lite_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_axi4lite_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/mis603_soc.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 99.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "mis603_soc_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+"XST completed"
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 13:39:49 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 13:39:55 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 13:42:18 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 13:44:50 2018
+ make -f mis603_soc.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp mis603_soc.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/mis603_soc.xml 
+Release 14.7 - psf2Edward EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi4lite_0; no DECERR
+checking will be performed.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp mis603_soc.xmp -report SDK\SDK_Export\hw/mis603_soc.html  -make_docs_local
+Release 14.7 - xdsgen EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing microblaze_0_ilmb.jpg.....
+Rasterizing microblaze_0_i_bram_ctrl.jpg.....
+Rasterizing microblaze_0_dlmb.jpg.....
+Rasterizing microblaze_0_d_bram_ctrl.jpg.....
+Rasterizing microblaze_0_bram_block.jpg.....
+Rasterizing microblaze_0.jpg.....
+Rasterizing debug_module.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing axi4lite_0.jpg.....
+Rasterizing mis603_soc_blkd.jpg.....
+Report generated.
+Report generation completed.
+WARNING:EDK:3888 - Worker process returned 0 but issued error message(s).
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 13:45:07 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\etc\mis603_soc.filters
+Done writing Tab View settings to:
+	F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\etc\mis603_soc.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Assigned Driver gpio 3.01.a for instance axi_gpio_0
+axi_gpio_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral axi_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - Use debug_module as reference
+INFO:EDK - Connect bus interface S_AXI to axi4lite_0
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: LED8
+WARNING:EDK:2137 - Peripheral LED8 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral LED8 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Overriding Xilinx file <TextEditor.cfg> with local file <D:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+Assigned Driver gpio 3.01.a for instance axi_gpio_0
+axi_gpio_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral LED8 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral axi_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral LED8 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral axi_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+axi_gpio_0 has been deleted from the project
+WARNING:EDK:2137 - Peripheral LED8 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:20:36 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+
+
+WARNING:EDK:2137 - Peripheral LED8 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x00400000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x00400000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi4lite_0; no DECERR
+checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 21 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 41 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 50 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 57 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 73 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 96 - Copying cache
+implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 122 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - elaborating
+IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:led8 - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130
+- Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Running NGCBUILD ...
+IPNAME:mis603_soc_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd ..
+mis603_soc_clock_generator_0_wrapper.ngc ../mis603_soc_clock_generator_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/clock_generator_0_wrapp
+er/mis603_soc_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/mis603_soc.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 25.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "mis603_soc_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+"XST completed"
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+
+
+WARNING:EDK - Peripheral LED8 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+
+
+WARNING:EDK - Peripheral LED8 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+
+
+WARNING:EDK - Peripheral LED8 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:29:36 2018
+ make -f mis603_soc.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp mis603_soc.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/mis603_soc.xml 
+Release 14.7 - psf2Edward EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi4lite_0; no DECERR
+checking will be performed.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp mis603_soc.xmp -report SDK\SDK_Export\hw/mis603_soc.html  -make_docs_local
+Release 14.7 - xdsgen EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing microblaze_0_ilmb.jpg.....
+Rasterizing microblaze_0_i_bram_ctrl.jpg.....
+Rasterizing microblaze_0_dlmb.jpg.....
+Rasterizing microblaze_0_d_bram_ctrl.jpg.....
+Rasterizing microblaze_0_bram_block.jpg.....
+Rasterizing microblaze_0.jpg.....
+Rasterizing debug_module.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing axi4lite_0.jpg.....
+Rasterizing LED8.jpg.....
+Rasterizing mis603_soc_blkd.jpg.....
+WARNING:EDK:3888 - Worker process returned 0 but issued error message(s).
+Report generated.
+Report generation completed.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:29:54 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:39:31 2018
+ make -f mis603_soc.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:39:31 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:43:24 2018
+ make -f mis603_soc.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:43:24 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:47:10 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:47:18 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+
+
+WARNING:EDK - Peripheral LED8 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:53:29 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 21 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 50 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 73 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 96 - Copying cache
+implementation netlist
+IPNAME:axi_gpio INSTANCE:led8 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - elaborating
+IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:microblaze_0_i_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 41 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:microblaze_0_d_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 57 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+INSTANCE:axi4lite_0 - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs
+line 122 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Running NGCBUILD ...
+IPNAME:mis603_soc_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd ..
+mis603_soc_clock_generator_0_wrapper.ngc ../mis603_soc_clock_generator_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/clock_generator_0_wrapp
+er/mis603_soc_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:mis603_soc_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 122 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd .. mis603_soc_axi4lite_0_wrapper.ngc
+../mis603_soc_axi4lite_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/axi4lite_0_wrapper/mis6
+03_soc_axi4lite_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_axi4lite_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_axi4lite_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/mis603_soc.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 36.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "mis603_soc_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+"XST completed"
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:57:08 2018
+ make -f mis603_soc.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp mis603_soc.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/mis603_soc.xml 
+Release 14.7 - psf2Edward EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp mis603_soc.xmp -report SDK\SDK_Export\hw/mis603_soc.html  -make_docs_local
+Release 14.7 - xdsgen EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing microblaze_0_ilmb.jpg.....
+Rasterizing microblaze_0_i_bram_ctrl.jpg.....
+Rasterizing microblaze_0_dlmb.jpg.....
+Rasterizing microblaze_0_d_bram_ctrl.jpg.....
+Rasterizing microblaze_0_bram_block.jpg.....
+Rasterizing microblaze_0.jpg.....
+Rasterizing debug_module.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing axi4lite_0.jpg.....
+Rasterizing LED8.jpg.....
+Rasterizing mis603_soc_blkd.jpg.....
+Report generated.
+Report generation completed.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:57:30 2018
+ make -f mis603_soc.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 16:57:30 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:05:17 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+ERROR:EDK:4074 - INSTANCE: LED8, PORT: GPIO_IO, CONNECTOR: LED8_GPIO_IO - No
+   driver found - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line
+   138 
+ERROR:EDK:440 - platgen failed with errors!
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:06:47 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+ERROR:EDK:4074 - INSTANCE: LED8, PORT: GPIO_IO, CONNECTOR: LED8_GPIO_IO - No
+   driver found - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line
+   138 
+ERROR:EDK:440 - platgen failed with errors!
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:10:57 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4181 - PORT: GPIO_IO_O, CONNECTOR: LED8_GPIO_IO_O_0 - floating
+   connection - F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 139
+    
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 21 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 41 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 50 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 57 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 73 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 96 - Copying cache
+implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 122 - Copying cache
+implementation netlist
+IPNAME:axi_gpio INSTANCE:led8 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - elaborating
+IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Running NGCBUILD ...
+IPNAME:mis603_soc_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd ..
+mis603_soc_clock_generator_0_wrapper.ngc ../mis603_soc_clock_generator_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/clock_generator_0_wrapp
+er/mis603_soc_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/mis603_soc.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 16.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "mis603_soc_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+"XST completed"
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:15:29 2018
+ make -f mis603_soc.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp mis603_soc.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/mis603_soc.xml 
+Release 14.7 - psf2Edward EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp mis603_soc.xmp -report SDK\SDK_Export\hw/mis603_soc.html  -make_docs_local
+Release 14.7 - xdsgen EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing microblaze_0_ilmb.jpg.....
+Rasterizing microblaze_0_i_bram_ctrl.jpg.....
+Rasterizing microblaze_0_dlmb.jpg.....
+Rasterizing microblaze_0_d_bram_ctrl.jpg.....
+Rasterizing microblaze_0_bram_block.jpg.....
+Rasterizing microblaze_0.jpg.....
+Rasterizing debug_module.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing axi4lite_0.jpg.....
+Rasterizing LED8.jpg.....
+Rasterizing mis603_soc_blkd.jpg.....
+Report generated.
+Report generation completed.
+WARNING:EDK:3888 - Worker process returned 0 but issued error message(s).
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:15:44 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:55:40 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: GPIO_IO_I, CONNECTOR: LED8_GPIO_IO_O_0 - No driver
+   found. Port will be driven to GND -
+   F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 138 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 21 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 41 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 50 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 57 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 73 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 96 - Copying cache
+implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 122 - Copying cache
+implementation netlist
+IPNAME:axi_gpio INSTANCE:led8 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - elaborating
+IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+ERROR:EDK:4072 - INSTANCE: LED8, PORT: GPIO_IO_I - port is driven by a
+   sourceless connector -
+   F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130 
+Completion time: 1.00 seconds
+ERROR:EDK:440 - platgen failed with errors!
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:56:38 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: GPIO_IO_I, CONNECTOR: LED8_GPIO_IO_O_0 - No driver
+   found. Port will be driven to GND -
+   F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 138 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 21 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 41 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 50 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 57 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 73 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 96 - Copying cache
+implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 122 - Copying cache
+implementation netlist
+IPNAME:axi_gpio INSTANCE:led8 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - elaborating
+IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+ERROR:EDK:4072 - INSTANCE: LED8, PORT: GPIO_IO_I - port is driven by a
+   sourceless connector -
+   F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130 
+Completion time: 0.00 seconds
+ERROR:EDK:440 - platgen failed with errors!
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 17:57:19 2018
+ make -f mis603_soc.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise   -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs
+
+Command Line: platgen -p xc6slx16ftg256-2 -lang verilog -intstyle ise -toplevel
+no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst mis603_soc.mhs 
+
+Parse F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/mis603_soc.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 21 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 41 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 50 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 57 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 73 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 96 - Copying cache
+implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 122 - Copying cache
+implementation netlist
+IPNAME:axi_gpio INSTANCE:led8 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 130 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 66 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - elaborating
+IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Running NGCBUILD ...
+IPNAME:mis603_soc_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\mis603_soc.mhs line 109 - Running
+NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx16ftg256-2 -intstyle silent -i -sd ..
+mis603_soc_clock_generator_0_wrapper.ngc ../mis603_soc_clock_generator_0_wrapper
+
+Reading NGO file
+"F:/FPGA_Study/MB_demo/MB_demo/mis603_soc/implementation/clock_generator_0_wrapp
+er/mis603_soc_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../mis603_soc_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../mis603_soc_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/mis603_soc.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 15.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "mis603_soc_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<D:/Xilinx/14.7/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<D:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/spartan6.acd>
+"XST completed"
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:00:52 2018
+ make -f mis603_soc.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp mis603_soc.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/mis603_soc.xml 
+Release 14.7 - psf2Edward EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 2 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp mis603_soc.xmp -report SDK\SDK_Export\hw/mis603_soc.html  -make_docs_local
+Release 14.7 - xdsgen EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing microblaze_0_ilmb.jpg.....
+Rasterizing microblaze_0_i_bram_ctrl.jpg.....
+Rasterizing microblaze_0_dlmb.jpg.....
+Rasterizing microblaze_0_d_bram_ctrl.jpg.....
+Rasterizing microblaze_0_bram_block.jpg.....
+Rasterizing microblaze_0.jpg.....
+Rasterizing debug_module.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing axi4lite_0.jpg.....
+Rasterizing LED8.jpg.....
+Rasterizing mis603_soc_blkd.jpg.....
+WARNING:EDK:3888 - Worker process returned 0 but issued error message(s).
+Report generated.
+Report generation completed.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:01:09 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:19:34 2018
+ make -f mis603_soc.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:19:34 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:23:34 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:41:22 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:41:38 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:43:35 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:43:55 2018
+ make -f mis603_soc.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00001fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) LED8	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x2000 -
+   D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:46:54 2018
+ make -f mis603_soc.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Apr 20 18:46:55 2018
+ xsdk.exe -hwspec F:\FPGA_Study\MB_demo\MB_demo\mis603_soc\SDK\SDK_Export\hw\mis603_soc.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!

@@ -1,0 +1,1238 @@
+13:46:02 **** Build of project Hello_World_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+13:46:11 **** Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_World.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Hello_World.elf  |tee "Hello_World.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2174	    268	   2084	   4526	   11ae	Hello_World.elf
+'Finished building: Hello_World.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Hello_World.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Hello_World.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Hello_World.elf 
+
+ELF file	: Hello_World.elf
+elfcheck passed.
+'Finished building: Hello_World.elf.elfcheck'
+' '
+13:48:11 **** Incremental Build of configuration Debug for project Hello_World ****
+make all 
+make: Nothing to be done for `all'.
+13:49:10 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_World.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Hello_World.elf  |tee "Hello_World.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2198	    268	   2084	   4550	   11c6	Hello_World.elf
+'Finished building: Hello_World.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Hello_World.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Hello_World.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Hello_World.elf 
+
+ELF file	: Hello_World.elf
+elfcheck passed.
+'Finished building: Hello_World.elf.elfcheck'
+' '
+13:49:12 **** Incremental Build of configuration Debug for project Hello_World ****
+make all 
+make: Nothing to be done for `all'.
+13:49:18 **** Incremental Build of configuration Debug for project Hello_World ****
+make all 
+make: Nothing to be done for `all'.
+16:27:46 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+16:29:52 **** Auto Build of project Water_LED_bsp ****
+make -k all 
+'Finished building libraries'
+16:29:54 **** Auto Build of project Hello_World_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+16:30:01 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+make: Nothing to be done for `all'.
+16:31:14 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+16:32:27 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [Water_LED.elf] ´íÎó 1
+16:38:22 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+16:40:07 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+16:41:11 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [Water_LED.elf] ´íÎó 1
+16:51:40 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+16:57:42 **** Auto Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+****  of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+16:57:51 **** Clean-only build of project Water_LED_bsp ****
+make -k clean 
+rm -rf microblaze_0
+16:57:52 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+16:59:17 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+17:16:28 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+17:16:34 **** Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2174	    268	   2084	   4526	   11ae	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+17:17:19 **** Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project Water_LED ****
+
+Nothing to build for project Water_LED
+17:18:09 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [Water_LED.elf] ´íÎó 1
+17:18:18 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:17:1: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:17:1: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+17:18:18 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:17:1: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:17:1: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+17:23:44 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c:6:2: error: invalid preprocessing directive #icnlude
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:18:1: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:18:1: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+17:24:17 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:18:1: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:18:1: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+17:24:21 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:18:1: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:18:1: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+17:26:33 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:29:1: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:29:1: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+17:26:39 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2022	    268	   2084	   4374	   1116	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+17:28:05 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:28:41 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:30:26 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:30:42 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:31:03 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:31:33 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:34:25 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2022	    268	   2084	   4374	   1116	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+17:34:27 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:34:34 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:39:13 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:39:36 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+17:41:22 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:01:21 **** Auto Build of project Water_LED_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+18:01:28 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:02:34 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:03:00 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:20:2: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:20:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+18:03:00 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:20:2: error: 'XPAR_LED_BASEADDR' undeclared (first use in this function)
+../src/Water_LED.c:20:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/Water_LED.o] ´íÎó 1
+18:03:14 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2022	    268	   2084	   4374	   1116	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+18:03:21 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:04:49 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:05:34 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:17:5: warning: unused variable 'i' [-Wunused-variable]
+../src/Water_LED.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1782	    268	   2084	   4134	   1026	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+18:05:35 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:05:38 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:06:09 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:07:37 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:17:5: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1786	    268	   2090	   4144	   1030	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+18:07:44 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:08:10 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:08:56 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:09:24 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+../src/Water_LED.c: In function 'main':
+../src/Water_LED.c:17:5: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1778	    268	   2090	   4136	   1028	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+18:09:29 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:09:40 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:10:19 **** Build of project W_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project W ****
+
+Nothing to build for project W
+18:11:23 **** Auto Build of configuration Debug for project W ****
+make all 
+'Building file: ../src/W.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../W_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/W.d" -MT"src/W.d" -o "src/W.o" "../src/W.c"
+'Finished building: ../src/W.c'
+' '
+'Building target: W.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../W_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "W.elf"  ./src/W.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [W.elf] ´íÎó 1
+18:11:28 **** Auto Build of configuration Debug for project W ****
+make all 
+'Building file: ../src/W.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../W_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/W.d" -MT"src/W.d" -o "src/W.o" "../src/W.c"
+'Finished building: ../src/W.c'
+' '
+'Building target: W.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../W_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "W.elf"  ./src/W.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: W.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size W.elf  |tee "W.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2022	    268	   2084	   4374	   1116	W.elf
+'Finished building: W.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck W.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "W.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 W.elf 
+
+ELF file	: W.elf
+elfcheck passed.
+'Finished building: W.elf.elfcheck'
+' '
+18:11:40 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:11:40 **** Incremental Build of configuration Debug for project W ****
+make all 
+make: Nothing to be done for `all'.
+18:17:58 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:17:58 **** Incremental Build of configuration Debug for project W ****
+make all 
+make: Nothing to be done for `all'.
+18:19:46 **** Auto Build of configuration Debug for project Water_LED ****
+make all 
+'Building file: ../src/Water_LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Water_LED_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Water_LED.d" -MT"src/Water_LED.d" -o "src/Water_LED.o" "../src/Water_LED.c"
+'Finished building: ../src/Water_LED.c'
+' '
+'Building target: Water_LED.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Water_LED_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Water_LED.elf"  ./src/Water_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Water_LED.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Water_LED.elf  |tee "Water_LED.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2022	    268	   2084	   4374	   1116	Water_LED.elf
+'Finished building: Water_LED.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck Water_LED.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "Water_LED.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 Water_LED.elf 
+
+ELF file	: Water_LED.elf
+elfcheck passed.
+'Finished building: Water_LED.elf.elfcheck'
+' '
+18:19:58 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:24:41 **** Build of project w_bsp ****
+make -k all 
+libgen -hw ../mis603_soc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mis603_soc_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project w ****
+
+Nothing to build for project w
+18:25:09 **** Auto Build of configuration Debug for project w ****
+make all 
+'Building file: ../src/w.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../w_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/w.d" -MT"src/w.d" -o "src/w.o" "../src/w.c"
+'Finished building: ../src/w.c'
+' '
+'Building target: w.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../w_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "w.elf"  ./src/w.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [w.elf] ´íÎó 1
+18:25:24 **** Auto Build of configuration Debug for project w ****
+make all 
+'Building file: ../src/w.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../w_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/w.d" -MT"src/w.d" -o "src/w.o" "../src/w.c"
+'Finished building: ../src/w.c'
+' '
+'Building target: w.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../w_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "w.elf"  ./src/w.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: w.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size w.elf  |tee "w.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2022	    268	   2084	   4374	   1116	w.elf
+'Finished building: w.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck w.elf -hw ../../mis603_soc_hw_platform/system.xml -pe microblaze_0  |tee "w.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mis603_soc_hw_platform/system.xml -pe
+microblaze_0 w.elf 
+
+ELF file	: w.elf
+elfcheck passed.
+'Finished building: w.elf.elfcheck'
+' '
+18:25:35 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:25:36 **** Incremental Build of configuration Debug for project w ****
+make all 
+make: Nothing to be done for `all'.
+18:26:08 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:26:08 **** Incremental Build of configuration Debug for project w ****
+make all 
+make: Nothing to be done for `all'.
+18:26:43 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:26:44 **** Incremental Build of configuration Debug for project w ****
+make all 
+make: Nothing to be done for `all'.
+18:30:33 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:30:33 **** Incremental Build of configuration Debug for project w ****
+make all 
+make: Nothing to be done for `all'.
+18:47:24 **** Incremental Build of configuration Debug for project Water_LED ****
+make all 
+make: Nothing to be done for `all'.
+18:47:25 **** Incremental Build of configuration Debug for project w ****
+make all 
+make: Nothing to be done for `all'.

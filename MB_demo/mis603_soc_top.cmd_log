@@ -1,0 +1,49 @@
+xst -intstyle ise -ifn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.xst" -ofn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mis603_soc/data/mis603_soc.ucf -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 
+xst -intstyle ise -ifn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.xst" -ofn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+xst -intstyle ise -ifn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.xst" -ofn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 
+xst -intstyle ise -ifn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.xst" -ofn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 
+xst -intstyle ise -ifn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.xst" -ofn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mis603_soc_top.ucf -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+xst -intstyle ise -ifn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.xst" -ofn "F:/FPGA_Study/MB_demo/MB_demo/mis603_soc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mis603_soc_top.ucf -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mis603_soc_top.ucf -bm edkBmmFile.bmm -p xc6slx16-ftg256-2 mis603_soc_top.ngc mis603_soc_top.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mis603_soc_top_map.ncd mis603_soc_top.ngd mis603_soc_top.pcf 
+par -w -intstyle ise -ol high -mt off mis603_soc_top_map.ncd mis603_soc_top.ncd mis603_soc_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mis603_soc_top.twx mis603_soc_top.ncd -o mis603_soc_top.twr mis603_soc_top.pcf -ucf mis603_soc_top.ucf 
+bitgen -intstyle ise -f mis603_soc_top.ut mis603_soc_top.ncd 

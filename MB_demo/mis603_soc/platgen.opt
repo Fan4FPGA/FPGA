@@ -1,0 +1,13 @@
+-p
+xc6slx16ftg256-2
+-lang
+verilog
+-intstyle
+ise
+-toplevel
+no
+-ti
+mis603_soc_i
+-msg
+__xps/ise/xmsgprops.lst
+mis603_soc.mhs

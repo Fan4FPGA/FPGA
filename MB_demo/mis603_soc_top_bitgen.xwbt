@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\FPGA_Study\MB_demo\MB_demo\mis603_soc_top.ncd
+OUTFILE=F:\FPGA_Study\MB_demo\MB_demo\mis603_soc_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=F:\FPGA_Study\MB_demo\MB_demo
+LICENSE=WebPack
+USER_INFO=__0_0_0

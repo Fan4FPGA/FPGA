@@ -1,0 +1,14 @@
+F:\FPGA_Study\MB_demo\MB_demo\mis603_soc_top.ngc 1524220764
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_proc_sys_reset_0_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_clock_generator_0_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_microblaze_0_ilmb_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_microblaze_0_dlmb_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_axi4lite_0_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_microblaze_0_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_microblaze_0_i_bram_ctrl_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_microblaze_0_d_bram_ctrl_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_debug_module_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_led8_wrapper.ngc 1524218292
+F:\FPGA_Study\MB_demo\MB_demo/mis603_soc_microblaze_0_bram_block_wrapper.ngc 1524218292
+OK

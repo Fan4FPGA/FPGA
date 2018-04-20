@@ -1,0 +1,2 @@
+ -p xc6slx16ftg256-2 -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -toplevel no -ti mis603_soc_i -msg __xps/ise/xmsgprops.lst
+

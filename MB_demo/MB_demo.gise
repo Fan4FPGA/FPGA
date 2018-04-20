@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="MB_demo.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MB_demo.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MB_demo.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MB_demo.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MB_demo.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MB_demo.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="MB_demo.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MB_demo.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="MB_demo.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="MB_demo.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="MB_demo.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MB_demo.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="MB_demo.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MB_demo.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MB_demo.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="MB_demo.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="MB_demo.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="MB_demo.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="MB_demo.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="MB_demo.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MB_demo.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="MB_demo_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MB_demo_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MB_demo_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MB_demo_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="MB_demo_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MB_demo_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MB_demo_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="MB_demo_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="MB_demo_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MB_demo_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MB_demo_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MB_demo_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MB_demo_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mb_demo.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mb_demo.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mb_demo.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITINIT_OPT" xil_pn:name="mis603_soc/__xps/bitinit.opt" xil_pn:origination="imported" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPS_SIM" xil_pn:name="mis603_soc/__xps/ise/mis603_soc.xpssim" xil_pn:origination="imported" xil_pn:subbranch="Par">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XPS_SYN" xil_pn:name="mis603_soc/__xps/ise/mis603_soc.xpssyn" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XPS_UPB" xil_pn:name="mis603_soc/__xps/ise/mis603_soc.xpsupb" xil_pn:origination="imported" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PLATGEN_OPT" xil_pn:name="mis603_soc/__xps/platgen.opt" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UCF" xil_pn:name="mis603_soc/data/mis603_soc.ucf" xil_pn:origination="imported" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_MHS" xil_pn:name="mis603_soc/mis603_soc.mhs" xil_pn:origination="imported" xil_pn:subbranch="FPGAConfiguration">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="mis603_soc_axi4lite_0_wrapper.ncf"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_axi4lite_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="mis603_soc_clock_generator_0_wrapper.ncf"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_clock_generator_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_debug_module_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_led8_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_microblaze_0_bram_block_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_microblaze_0_d_bram_ctrl_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="mis603_soc_microblaze_0_dlmb_wrapper.ncf"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_microblaze_0_dlmb_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_microblaze_0_i_bram_ctrl_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="mis603_soc_microblaze_0_ilmb_wrapper.ncf"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_microblaze_0_ilmb_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="mis603_soc_microblaze_0_wrapper.ncf"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_microblaze_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_proc_sys_reset_0_wrapper.ngc">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="PostSynthSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mis603_soc_top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mis603_soc_top.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mis603_soc_top.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mis603_soc_top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mis603_soc_top.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mis603_soc_top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mis603_soc_top.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mis603_soc_top.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="mis603_soc_top.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mis603_soc_top.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="mis603_soc_top.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="mis603_soc_top.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="mis603_soc_top.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mis603_soc_top.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="mis603_soc_top.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mis603_soc_top.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mis603_soc_top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="mis603_soc_top.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="mis603_soc_top.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="mis603_soc_top.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mis603_soc_top.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="mis603_soc_top.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mis603_soc_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mis603_soc_top_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mis603_soc_top_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mis603_soc_top_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mis603_soc_top_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mis603_soc_top_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="mis603_soc_top_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mis603_soc_top_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mis603_soc_top_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="mis603_soc_top_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="mis603_soc_top_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mis603_soc_top_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mis603_soc_top_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mis603_soc_top_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mis603_soc_top_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mis603_soc_top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1524202363" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1524202363">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524219256" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-9181012756888186739" xil_pn:start_ts="1524219256">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524219256" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1957280616148179613" xil_pn:start_ts="1524219256">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524202363" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1524202363">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524219256" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4606513364772350991" xil_pn:start_ts="1524219256">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524202363" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426877399996" xil_pn:start_ts="1524202363">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524218293" xil_pn:in_ck="-5675077816404727129" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4472720529037123091" xil_pn:start_ts="1524218287">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="mis603_soc.ngc"/>
+      <outfile xil_pn:name="mis603_soc_axi4lite_0_wrapper.ncf"/>
+      <outfile xil_pn:name="mis603_soc_axi4lite_0_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_clock_generator_0_wrapper.ncf"/>
+      <outfile xil_pn:name="mis603_soc_clock_generator_0_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_debug_module_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_led8_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_bram_block_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_d_bram_ctrl_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_dlmb_wrapper.ncf"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_dlmb_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_i_bram_ctrl_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_ilmb_wrapper.ncf"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_ilmb_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_wrapper.ncf"/>
+      <outfile xil_pn:name="mis603_soc_microblaze_0_wrapper.ngc"/>
+      <outfile xil_pn:name="mis603_soc_proc_sys_reset_0_wrapper.ngc"/>
+    </transform>
+    <transform xil_pn:end_ts="1524220765" xil_pn:in_ck="6291631645575361169" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3795910821711262126" xil_pn:start_ts="1524220752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="mis603_soc_top.lso"/>
+      <outfile xil_pn:name="mis603_soc_top.ngc"/>
+      <outfile xil_pn:name="mis603_soc_top.ngr"/>
+      <outfile xil_pn:name="mis603_soc_top.prj"/>
+      <outfile xil_pn:name="mis603_soc_top.stx"/>
+      <outfile xil_pn:name="mis603_soc_top.syr"/>
+      <outfile xil_pn:name="mis603_soc_top.xst"/>
+      <outfile xil_pn:name="mis603_soc_top_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1524221050" xil_pn:in_ck="-3593295774878003020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1464455513503842362" xil_pn:start_ts="1524221050">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524221087" xil_pn:in_ck="9111153736291614059" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6761547884353157508" xil_pn:start_ts="1524221050">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="mis603_soc_top.bld"/>
+      <outfile xil_pn:name="mis603_soc_top.ngd"/>
+      <outfile xil_pn:name="mis603_soc_top_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1524221112" xil_pn:in_ck="-2494846674941171923" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="170182801565208134" xil_pn:start_ts="1524221087">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="mis603_soc_top.pcf"/>
+      <outfile xil_pn:name="mis603_soc_top_map.map"/>
+      <outfile xil_pn:name="mis603_soc_top_map.mrp"/>
+      <outfile xil_pn:name="mis603_soc_top_map.ncd"/>
+      <outfile xil_pn:name="mis603_soc_top_map.ngm"/>
+      <outfile xil_pn:name="mis603_soc_top_map.xrpt"/>
+      <outfile xil_pn:name="mis603_soc_top_summary.xml"/>
+      <outfile xil_pn:name="mis603_soc_top_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1524221136" xil_pn:in_ck="6988152253553747679" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1524221112">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="mis603_soc_top.ncd"/>
+      <outfile xil_pn:name="mis603_soc_top.pad"/>
+      <outfile xil_pn:name="mis603_soc_top.par"/>
+      <outfile xil_pn:name="mis603_soc_top.ptwx"/>
+      <outfile xil_pn:name="mis603_soc_top.unroutes"/>
+      <outfile xil_pn:name="mis603_soc_top.xpi"/>
+      <outfile xil_pn:name="mis603_soc_top_pad.csv"/>
+      <outfile xil_pn:name="mis603_soc_top_pad.txt"/>
+      <outfile xil_pn:name="mis603_soc_top_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1524221161" xil_pn:in_ck="-7939573516121265487" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1524221136">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="mis603_soc_top.bgn"/>
+      <outfile xil_pn:name="mis603_soc_top.bit"/>
+      <outfile xil_pn:name="mis603_soc_top.drc"/>
+      <outfile xil_pn:name="mis603_soc_top.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1524221171" xil_pn:in_ck="-1018158113755164411" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1524221169">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524221136" xil_pn:in_ck="-7719710119689699723" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1524221130">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="mis603_soc_top.twr"/>
+      <outfile xil_pn:name="mis603_soc_top.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>
